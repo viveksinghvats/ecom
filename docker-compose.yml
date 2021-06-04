@@ -1,0 +1,9 @@
+version: '2'
+services:
+  groceryapi:
+    image: registry.gitlab.com/calypte-localz/grocery-api:latest
+    ports:
+     - "3000:3000"
+    restart: always
+    environment:
+     - NODE_ENV=production
